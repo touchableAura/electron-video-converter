@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Electron Video Player - Powered by PLYR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.3/plyr.css"
+        integrity="sha512-VhUW1MevAGHiK4eUQ30YKfhEOSKerSjHhS36HVbs2hXvfg5SnyOqESk3BbrH4887ABFO3/rVApfIvLKf1AmLxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.3/plyr.js"
+        integrity="sha512-H0HL8RbcV8yX/Cc5XFEr5xVbQH0S3/M9BIz1YA6Ni6+YSuYZa0Cg9DDPSP/RzfshOh2PT4psYlx4a3cTKRuPTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const player = Plyr.setup('.js-player');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 id="selectFile" hidden>Select a video from the menu</h1>
+        <video class="js-player">
+            <!--source video provided is a temporary placeholder only. You'll need to apply a video to the source tag programatically -->
+            <source src="sample.mp4" />
+        </video>
+    </div>
+    <script defer src="./renderer.js"></script>
+</body>
+
+</html>

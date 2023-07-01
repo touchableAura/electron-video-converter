@@ -1,0 +1,32 @@
+{
+  "name": "assignment-electron-evanStudent",
+  "version": "1.0.0",
+  "description": "<img width=\"150px\" src=\"https://w0244079.github.io/nscc/nscc-jpeg.jpg\" >",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch . --exec electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSCC-Winter2023-APPD5015/assignment-electron-evanStudent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NSCC-Winter2023-APPD5015/assignment-electron-evanStudent/issues"
+  },
+  "homepage": "https://github.com/NSCC-Winter2023-APPD5015/assignment-electron-evanStudent#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "electron": "^22.1.0",
+    "exif": "^0.6.0",
+    "electron-progressbar": "^2.0.1",
+    "ffmpeg-static-electron": "^2.0.3",
+    "ffprobe-static-electron": "^2.0.2",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
